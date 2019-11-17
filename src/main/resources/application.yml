@@ -1,0 +1,19 @@
+
+
+server:
+  port: 8080
+
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+
+mybatis:
+  type-aliases-package: com.example.accessingdatamysql.entity
+  mapperLocations: classpath:mappers/*.xml
